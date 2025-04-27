@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="contact-container">
+      <form
+        action="https://formspree.io/f/mgvarwjo"
+        method="POST"
+        class="contact-left"
+      >
+        <div class="contact-left-title">
+          <h2>GET IN TOUCH</h2>
+          <hr />
+        </div>
+
+        <input
+          type="text"
+          name="name"
+          placeholder="your name"
+          required
+          class="contact-inputs"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="your email"
+          required
+          class="contact-inputs"
+        />
+        <textarea
+          name="message"
+          placeholder="your message"
+          class="conact-input"
+          required
+        ></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="form.js"></script>
+  </body>
+</html>
