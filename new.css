@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("back6.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.navbar {
+  background-color: #333;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #ff6347;
+  border-radius: 5px;
+}
+
+.navbar a.active {
+  background-color: #ff6347;
+}
+
+.first {
+  height: 90vh;
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-right: 180px;
+}
+
+.first h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  forced-color-adjust: auto;
+  margin-bottom: 20px;
+}
+
+.first p {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.first .cta-btn {
+  background-color: #ff6347;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.first .cta-btn:hover {
+  background-color: #ff4500;
+}
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.services h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-table {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.pricing-plan {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.pricing-plan .price {
+  font-size: 3.5em;
+  color: #ff6347;
+}
+
+.pricing-plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+}
+.footer p {
+  text-align: right;
+  padding-right: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4caf50;
+  color: white;
+}
+#slogan {
+  font-size: 30px;
+  font-style: italic;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 5px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-shadow: #333;
+}
+#resources {
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#resources h1 {
+  font-size: 3.5em;
+  color: grey;
+  margin-bottom: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#resources p {
+  font-size: 1.2em;
+  color: black;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* Mobile Styles (phones, less than 768px) */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .first h1 {
+    font-size: 2em;
+  }
+
+  .first p {
+    font-size: 1em;
+  }
+
+  .first .cta-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+
+  .card-container,
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .pricing-plan {
+    width: 90%;
+  }
+
+  #resources h1 {
+    font-size: 2em;
+  }
+
+  #resources p {
+    font-size: 1em;
+  }
+
+  #slogan {
+    font-size: 20px;
+  }
+}
+
+/* Laptop Styles (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .card,
+  .pricing-plan {
+    width: 45%;
+  }
+
+  .first h1 {
+    font-size: 3em;
+  }
+
+  .first p {
+    font-size: 1.2em;
+  }
+
+  .first .cta-btn {
+    font-size: 1.1em;
+  }
+
+  #resources h1 {
+    font-size: 2.5em;
+  }
+
+  #resources p {
+    font-size: 1.1em;
+  }
+}
+.click-box {
+  padding: 15px 15px;
+  background: linear-gradient(135deg, grey, white);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
+  margin-bottom: 66vh;
+
+  margin-top: 40px;
+  margin-right: 700px;
+}
+
+.click-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+.click-box:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.click-box h2 {
+  font-size: 20px;
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
